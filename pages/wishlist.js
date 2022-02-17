@@ -21,7 +21,7 @@ import BookmarkRoundedIcon from '@material-ui/icons/BookmarkRounded';
 import ClearOutlinedIcon from '@material-ui/icons/ClearOutlined';
 import DetailBooks from './components/containers/DetialBook';
 import Banner from './components/presentaions/Banner';
-import { bookCategories } from './components/presentaions/model';
+import { bookCategories } from '../state/model';
 import { CLOSE, RBOOKS, CLDE, BOOK, CURRENTUSER, USERSAVE } from '../state/mapState';
 import { useRecoilState, useSetRecoilState, useRecoilValue } from 'recoil';
 

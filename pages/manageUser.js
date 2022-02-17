@@ -189,8 +189,7 @@ export default function manageUser() {
   const users = useRecoilValue(ALLUSER);
   const [clUpU, setClUpU] = useRecoilState(CLUPU);
   const [clDeU, setClDeU] = useRecoilState(CLDEU);
-  const setUser = useSetRecoilState(USER);
-  const usered = false;
+
 
   const handleRequestSort = (event, property) => {
     const isAsc = orderBy === property && order === 'asc';

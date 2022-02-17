@@ -240,7 +240,7 @@ const EditProfile = () => {
                                                     >
                                                         <div>
                                                             <Avatar
-                                                                src={user.profileURL}
+                                                                src={user?.profileURL}
                                                                 className={classes.profile}
                                                             />
                                                         </div>
@@ -296,7 +296,7 @@ const EditProfile = () => {
                                         label='First Name'
                                         fullWidth
                                         name='fname'
-                                        value={user.fname}
+                                        value={user?.fname}
                                         onChange={(e) => setUser((prev) => ({ ...prev, fname: e.target.value }))}
                                     />
                                 </Grid>
@@ -309,7 +309,7 @@ const EditProfile = () => {
                                         label='Last Name'
                                         fullWidth
                                         name='lname'
-                                        value={user.lname}
+                                        value={user?.lname}
                                         onChange={(e) => setUser((prev) => ({ ...prev, lname: e.target.value }))}
                                     />
                                 </Grid>
@@ -318,7 +318,7 @@ const EditProfile = () => {
                                         <FormLabel>Gender</FormLabel>
                                         <RadioGroup
                                             name='gender'
-                                            value={user.gender}
+                                            value={user?.gender}
                                             onChange={(e) => setUser((prev) => ({ ...prev, gender: e.target.value }))}
                                         >
                                             <div>
@@ -340,7 +340,7 @@ const EditProfile = () => {
                                         label='Birth Date'
                                         fullWidth
                                         name='birthDate'
-                                        value={user.birthDate}
+                                        value={user?.birthDate}
                                         onChange={(e) => setUser((prev) => ({ ...prev, birthDate: e.target.value }))}
 
                                     />
@@ -354,7 +354,7 @@ const EditProfile = () => {
                                         label='Grade'
                                         fullWidth
                                         name='grade'
-                                        value={user.grade}
+                                        value={user?.grade}
                                         onChange={(e) => setUser((prev) => ({ ...prev, grade: e.target.value }))}
                                     >
                                         <MenuItem value='10 A'>10 A</MenuItem>
@@ -374,7 +374,7 @@ const EditProfile = () => {
                                         label='Email'
                                         fullWidth
                                         name='email'
-                                        value={user.email}
+                                        value={user?.email}
                                         onChange={()=>(setTouched(true))}
                                         onBlur={()=>(setTouched(false))}   
                                         error = {touched}

@@ -19,7 +19,7 @@ import {
     Switch,
 } from '@material-ui/core';
 import CloseIcon from '@material-ui/icons/Close';
-import { addBookCategories, addBookSubCategories } from '../presentaions/model';
+import { addBookCategories, addBookSubCategories } from '../../../state/model';
 import CameraAltRoundedIcon from '@material-ui/icons/CameraAltRounded';
 import { BOOK } from '../../../state/mapState';
 

@@ -13,7 +13,6 @@ import {
 } from "@material-ui/core";
 import { useRecoilValue, useRecoilState, useSetRecoilState } from "recoil";
 import { CURRENTUSER, CLEDU, FETCHUSER } from "../state/mapState";
-import Banner from './components/presentaions/Banner';
 import EditProfile from './components/containers/EditProfile'
 
 const useStyles = makeStyles((theme) => ({
