@@ -189,6 +189,7 @@ export default function manageUser() {
   const users = useRecoilValue(ALLUSER);
   const [clUpU, setClUpU] = useRecoilState(CLUPU);
   const [clDeU, setClDeU] = useRecoilState(CLDEU);
+  const setUser = useSetRecoilState(USER);
 
 
   const handleRequestSort = (event, property) => {
